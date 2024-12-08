@@ -1,0 +1,56 @@
+.paymentContainer {
+	max-width: 400px;
+	margin: 50px auto;
+	padding: 20px;
+	border-radius: 8px;
+	background-color: var(--background);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: var(--text-primary);
+	margin-bottom: 20px;
+}
+
+.paymentDetails {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.label {
+	font-size: 16px;
+	color: var(--text-secondary);
+}
+
+.amount {
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--accent);
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.payButton {
+	padding: 12px 24px;
+	font-size: 16px;
+	background-color: var(--btn-success-bg);
+	color: var(--btn-text-light);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.payButton:hover {
+	background-color: var(--btn-success-hover);
+}
+
+.payButton:focus {
+	outline: none;
+}

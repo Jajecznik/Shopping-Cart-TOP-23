@@ -1,0 +1,17 @@
+.iconContainer {
+	width: 3rem;
+	height: 3rem;
+	padding: 0.5rem;
+	margin: 0 1rem;
+	border-radius: 100%;
+	outline: 2px solid var(--border);
+	cursor: pointer;
+}
+
+.light {
+	background-color: gray;
+}
+
+.dark {
+	background-color: yellow;
+}

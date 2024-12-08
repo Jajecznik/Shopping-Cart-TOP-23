@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+	--max-width: 1536px;
+}
+
+/* Light Mode */
+:root {
+	--background: #ffffff;
+	--card-background: #f5f5f5;
+	--border: #bdbdbd;
+
+	--text-primary: #212121;
+	--text-primary-hover: #323232;
+	--text-secondary: #757575;
+
+	--btn-primary-bg: #1e88e5;
+	--btn-primary-hover: #1565c0;
+	--btn-secondary-bg: #e0e0e0;
+	--btn-secondary-hover: #bdbdbd;
+	--btn-success-bg: #43a047;
+	--btn-success-hover: #2e7d32;
+	--btn-warning-bg: #ff5722;
+	--btn-warning-hover: #e64a19;
+
+	--btn-text-light: #ffffff;
+
+	--accent: #d81b60;
+	--accent-hover: #c2185b;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+	--background: #121212;
+	--card-background: #1f1f1f;
+	--border: #424242;
+
+	--text-primary: #ffffff;
+	--text-primary-hover: #eeeeee;
+	--text-secondary: #b3b3b3;
+
+	--btn-primary-bg: #1e88e5;
+	--btn-primary-hover: #1565c0;
+	--btn-secondary-bg: #424242;
+	--btn-secondary-hover: #616161;
+	--btn-success-bg: #43a047;
+	--btn-success-hover: #2e7d32;
+	--btn-warning-bg: #ff5722;
+	--btn-warning-hover: #e64a19;
+
+	--btn-text-light: #ffffff;
+
+	--accent: #ff4081;
+	--accent-hover: #f50057;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	border-style: solid;
+	border-color: black;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	background-color: var(--card-background);
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+h3 {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+h4 {
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+h5 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+h6 {
+	font-size: 0.875rem;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+	display: block;
+}
+
+img,
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+.loadingInfo,
+.errorInfo {
+	font-size: 1.25rem;
+	text-align: center;
+}

@@ -1,0 +1,15 @@
+.productsContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 2rem;
+	align-items: stretch;
+}
+
+h2 {
+	margin: 1rem;
+	color: var(--btn-warning-bg);
+}
+
+h2 > span {
+	color: var(--btn-warning-hover);
+}

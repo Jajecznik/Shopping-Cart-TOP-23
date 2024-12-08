@@ -1,0 +1,111 @@
+.cart {
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 500px;
+	height: 100vh;
+	background-color: var(--card-background);
+	color: var(--text-primary);
+	box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+	transition: right 0.3s ease-in-out;
+	padding: 1rem;
+	z-index: 1000;
+}
+
+@media (max-width: 600px) {
+	.cart {
+		width: 100%;
+	}
+}
+
+.cart.open {
+	right: 0;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header span {
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.cart h2 {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+.cartContent {
+	max-height: calc(100vh - 150px);
+	overflow-y: auto;
+}
+
+.product {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+	padding: 10px;
+	border-bottom: 1px solid var(--border);
+}
+
+.productInfo p {
+	margin: 0;
+}
+
+.productActions {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.removeBtn {
+	background-color: var(--btn-warning-bg);
+	color: var(--btn-text-light);
+	padding: 5px 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.removeBtn:hover {
+	background-color: var(--btn-warning-hover);
+}
+
+.quantityInput {
+	width: 50px;
+	padding: 5px;
+	text-align: center;
+}
+
+.cartActions {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.checkoutBtn {
+	background-color: var(--btn-primary-bg);
+	color: var(--btn-text-light);
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.checkoutBtn:hover {
+	background-color: var(--btn-primary-hover);
+}
+
+.clearBtn {
+	background-color: var(--btn-secondary-bg);
+	color: var(--text-primary);
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.clearBtn:hover {
+	color: var(--text-primary-hover);
+	background-color: var(--btn-secondary-hover);
+}
